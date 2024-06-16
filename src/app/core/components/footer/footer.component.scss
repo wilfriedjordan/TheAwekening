@@ -1,0 +1,43 @@
+
+li.list__footer{
+  list-style: circle;
+  color: aqua;
+  font-size: 1rem;
+}
+
+a.list__item__link__instagram:hover{
+  @apply bg-gradient-to-r from-blue-600 to-pink-600  ;
+}
+
+
+[class*="cacher-"]{
+  opacity: 0;
+  transform: translateY(20%);
+}
+
+.affichage{
+  opacity: 1;
+  transform: translateY(0);
+  transition:1s cubic-bezier(.54,0, 0,1);
+
+}
+.cacher-2{
+  transition-delay: 0.3ms;
+}
+.cacher-3{
+  transition-delay: 0.4ms;
+}
+.cacher-4{
+  transition-delay: 0.5ms;
+}
+.cacher-5{
+  transition-delay: 0.6ms;
+}
+
+.cacher-6{
+  transition-delay: 0.7ms;
+}
+
+.cacher-7{
+  transition-delay: 0.8ms;
+}

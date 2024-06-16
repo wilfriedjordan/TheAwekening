@@ -1,0 +1,16 @@
+<div class="w-97 bg-white h-96 rounded-xl">
+  <div class="image w-full h-52">
+    <a href=""><img src="{{post.image}}" [alt]="post.title" class="h-full w-full"></a>
+  </div>
+  <div class="text p-5">
+    <p class="leading-8">
+      <a href="" class="text-blue-600  uppercase">Suivre un cours paraport </a>
+      <i class="fa-solid fa-arrow-right text-blue-600"></i>
+    </p>
+    <h3 class="text-xl font-bold">{{post.title}}</h3>
+    <p class="text-xl">{{post.content | shorting :40 }}</p>
+    <button class="leading-8 text-blue-600 text-xl">En savoir plus 
+      <i class="fa-solid fa-arrow-right"></i>
+    </button>
+  </div>
+</div>

@@ -1,0 +1,34 @@
+ul.list :nth-child(4) {
+  @apply text-blue-500 absolute right-12  text-xl;
+}
+
+a.list__item__link {
+  @apply text-lg hover:text-gray-500;
+}
+
+a.link__newsletter {
+  display: block;
+  width: 18rem;
+  height: 3rem;
+  text-align: center;
+  background-image: linear-gradient(to left, #e45e1f, #1f89d5);
+  border-radius: 0.5rem;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  padding: 0.7rem 0.2rem;
+  color: white;
+  font-weight: bold;
+}
+
+a.link__newsletter:hover {
+  transform: scale(0.8);
+}
+
+div.sous__list {
+  border-top: solid 4.5px #4343e5;
+  display: none;
+}
+
+li.list__item:hover > div.sous__list {
+  display: block;
+}

@@ -1,0 +1,99 @@
+@charset "UTF-8";
+header {
+  height: auto;
+  z-index: 1;
+  width: 100%;
+}
+
+header div.sombre {
+  height: 100%;
+}
+
+a.list__item__link {
+  @apply text-lg hover:text-gray-500;
+}
+
+a.link__newsletter {
+  display: block;
+  width: 18rem;
+  height: 3rem;
+  text-align: center;
+  background-image: linear-gradient(to left, #e45e1f, #1f89d5);
+  border-radius: 0.5rem;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  padding: 0.7rem 0.2rem;
+  color: white;
+  font-weight: bold;
+}
+
+div#Hoverlay {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+a#btn__link {
+  position: relative;
+  overflow: hidden;
+  /* Nécessaire pour masquer le débordement du pseudo-élément */
+  transition: background 1.5s;
+  opacity: 1;
+  font-size: 1.5rem;
+  border-radius: 1.5rem;
+}
+
+a#btn__link::after {
+  /* Couleur au survol */
+  content: "";
+  position: absolute;
+  /* Commence hors du bouton, au-dessus */
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 100%;
+  opacity: 0.8;
+  z-index: 1;
+  transition: top 1.5s;
+}
+
+a#btn__link:hover::after {
+  top: 0;
+  @apply bg-blue-800;
+}
+
+section.section_1 {
+  height: auto;
+}
+
+section.section_2 {
+  height: auto;
+}
+
+a.inline-block {
+  border-radius: 0.5rem;
+}
+
+[class*=cacher-] {
+  opacity: 0;
+  transform: translateY(20%);
+}
+
+.affichage {
+  opacity: 1;
+  transform: translateY(0);
+  transition: 1s cubic-bezier(0.54, 0, 0, 1);
+}
+
+.cacher-2 {
+  transition-delay: 0.3ms;
+}
+
+.cacher-3 {
+  transition-delay: 0.4ms;
+}
+
+.cacher-4 {
+  transition-delay: 0.5ms;
+}

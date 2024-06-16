@@ -1,0 +1,43 @@
+<header class="flex items-center justify-center gap-32">
+  <div class="image w-48 flex items-center">
+    <img src="./../../../../assets/logo_Awakening.png" alt="logo" class="w-40">
+    <h2><a routerLink="" class="text-xl font-semibold">TheAwakening</a></h2>
+  </div>
+  <div class="navigation">
+    <nav class="navbar ">
+      <ul class="list flex items-center gap-6 relative ">
+        <li class="list__item"><a routerLink="home" class="list__item__link font-ptserif">Acceuil</a></li>
+        <li class="list__item flex items-center gap-1 relative">
+          <a class="list__item__link " >Reference</a>
+          <i class="fa-solid fa-circle-chevron-down text-blue-500"></i>
+          <div class="sous__list absolute top-8 bg-white w-99 left-0 h-72 z-50">
+            <ul class="sous__list p-8 opacity-75 leading-8">
+              <li>Documentation Officiel</li>
+              <li>Site Officiel des Techno</li>
+              <li>OpenClassRooms</li>
+              <li>Blog des Influenceux du domaine</li>
+            </ul>
+          </div>
+        </li>
+        <li class="list__item flex items-center gap-1">
+          <a class="list__item__link " >Resource</a>
+          <i class="fa-solid fa-circle-chevron-down text-blue-500"></i>
+          <div class="sous__list absolute top-8 bg-white w-99 left-0 h-80 z-50">
+            <ul class="sous__list p-8 opacity-75 leading-8 flex items-center text-black">
+              <li>Documentation Officiel</li>
+              <li>Documentation Angular </li>
+              <li>Documentation MDN</li>
+              <li>Cours Javascript </li>
+            </ul>
+          </div>
+        </li>
+        <li class="separation">|</li>
+        <li class="list__item"><a routerLink="blog" class="list__item__link">Blog</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="user flex items-center gap-3">
+    <a href="" class="block hover:underline text-lg">S'identifier </a>
+    <a href="" class="link__newsletter">Rejoindre la newsletter</a>
+  </div>
+</header>
